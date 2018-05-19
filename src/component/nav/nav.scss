@@ -1,0 +1,24 @@
+.nav {
+    background-color: black;
+    color: white;
+    width: 100vw;
+    height: 3rem;
+}
+
+.nav a, span {
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    margin: 10px;
+}
+
+.navStuff {
+    float:right;
+    margin-top: 10px;
+    margin-right:20%;
+}
+
+.nav span {
+    float: left;
+    margin-left: 20%;
+}

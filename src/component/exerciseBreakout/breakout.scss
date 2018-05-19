@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+* {
+font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background-color: #D9D9D9;
+}
+
+div .exerciseName {
+    background-color: #C3EFFD;
+    min-height: 422px;
+    height: 20vh;
+    margin: 0 auto;
+    max-width: 960px;
+    text-align: center;
+    padding: 2rem;
+}
+
+.exerciseIcon img {
+    width: 315px;
+    height: 315px;
+}
+
+div .steps {
+    background-color: #fff;
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.exUL {
+    list-style-type: none;
+}
+
+.exLI {
+    display: inline;
+    float: left;
+    min-width: 480px;
+}
+
+.leaderboard h1 {
+    background-color: #D0FDC3;
+    padding: 1rem;
+    font-size: 20pt;
+}
+
+.leaderboard li {
+    background-color: white;
+    padding: .8rem;
+    margin-left: 40%;
+    font-size: 16pt;
+}
+
+.leaderboardContent {
+    background-color: #fff;
+    min-height: 270px;
+    text-align: left;
+}
+
+.exercise h1 {
+    font-size: 24pt;
+}
+
+.steps {
+    text-align: center;
+    padding: 2rem;
+}
+
+.steps h1 {
+    font-size: 26pt;
+}
+
+.title {
+    font-size: 40pt;
+    margin-bottom: 2rem;
+}
