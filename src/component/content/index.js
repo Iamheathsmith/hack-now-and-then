@@ -4,7 +4,7 @@ import React from 'react';
 import Modal from '../modal/index';
 import * as routes from '../routes';
 import Images from '../images/index';
-import { ImgData } from '../../images/images';
+const ImgData = require('../../images/images');
 import {Link} from 'react-router-dom';
 import Profile from '../profile/index';
 import { renderIf } from '../lib/utils';
@@ -16,7 +16,7 @@ class Content extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      login: true,
+      login: false,
     };
     this.handlelogIn = this.handlelogIn.bind(this);
   }
@@ -38,10 +38,6 @@ class Content extends React.Component {
         </nav> */}
 
         <Profile />
-        <Images
-          data={Pic}
-        />
-        {/* <ExerciseBO /> */}
 
         {renderIf(this.state.login === false,
           <Modal
@@ -50,10 +46,10 @@ class Content extends React.Component {
         )}
 
         <div className="images">
-          {console.log('this is a test', ImgData)}
           {renderIf(this.state.login === true,
-            ImgData.map((item, arr) => {
-              <Images
+            ImgData.default.images.map((item, idx) => {
+              console.log('test');
+              return <Images key={idx}
                 data={item}
               />;
             })

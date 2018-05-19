@@ -2,8 +2,17 @@ import React from 'react';
 // import './input-area.scss';
 
 class exerciseBreakout extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      img: '',
+      url: [],
+    };
+  }
 
   render() {
+    console.log('this state', this.props.location.state);
     return (
       <div className="exerciseBreakout" >
         <div className="exerciseName">
@@ -11,20 +20,20 @@ class exerciseBreakout extends React.Component {
             <img src="" />
           </div>
           <div className="exercise">
-            <h1>Yoga</h1>
+            <h1>{this.props.location.state.name}</h1>
           </div>
         </div>
 
         <div className="steps">
-          <h1>Steps</h1>
-          <iframe src="www.example.com"></iframe>
+          <h1>Video</h1>
+          <iframe src={this.props.location.state.video}></iframe>
         </div>
 
         <div className="leaderboard">
           <ul>
-            <li>David</li>
-            <li>Heath</li>
-            <li>Alan</li>
+            <li>{this.props.location.state.leaderBoard[0]}</li>
+            <li>{this.props.location.state.leaderBoard[1]}</li>
+            <li>{this.props.location.state.leaderBoard[2]}</li>
           </ul>
         </div>
       </div>
