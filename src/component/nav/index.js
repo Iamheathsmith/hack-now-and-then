@@ -8,8 +8,11 @@ class Nav extends React.Component {
   render() {
     return (
       <div className="nav">
+        <span>Gamigen</span>
+        <div className="navStuff">
         <Link to={routes.CONTENT} className="home">Home</Link>
         <Link to={routes.PROFILE} className="profile">Profile</Link>
+        </div>
       </div>
     );
   }
