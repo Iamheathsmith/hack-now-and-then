@@ -9,11 +9,12 @@ class ExImages extends React.Component {
   render() {
     return (
       <div className="div-img">
-        <img src={this.props.data.img} className="main-img"></img>
-        <Link to={{
+        <img src={this.props.data.img} className={this.props.stuff ? 'day-item' :'main-img'}></img>
+        <div className="to-link"><Link to={{
           pathname:routes.EXERCISEBO,
           state: this.props.data,
-        }} >this cool thing</Link>
+        }}>{this.props.data.name}</Link>
+        </div>
       </div>
     );
   }

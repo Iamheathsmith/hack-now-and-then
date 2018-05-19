@@ -1,6 +1,7 @@
 import React from 'react';
 import Nav from '../nav/index';
-// import './input-area.scss';
+import './profile.scss';
+const image = require('../../images/img/profile.JPG');
 
 class Profile extends React.Component {
 
@@ -8,14 +9,16 @@ class Profile extends React.Component {
     return (
       <div className="profile">
 
-        <nav className="nav">
-          <Nav />
-        </nav>
+        <header className="header">
+          <h1 className="logo">WORK IT OUT!</h1>
+          <div className="navBar">
+            <Nav />
+          </div>
+        </header>
 
         <div className="top-holder">
           <div className="img">
-            <img>
-            </img>
+            <img src={image} className="profile-img"></img>
           </div>
           <div className="proInfo">
             <ul>
@@ -25,18 +28,18 @@ class Profile extends React.Component {
               <li>Rival: Alan</li>
             </ul>
           </div>
-        </div>
+          <div className="saying">
+            <h1>"Mr. Poopy Butthole is the greatest person ever!"</h1>
+          </div>
 
-        <div className="saying">
-          <h1>Mr. Poopy Butthole is the greatest person ever!</h1>
-        </div>
-
-        <div className="stats">
-          <ul>
-            <li>Yoga: 50</li>
-            <li>Basketball: 200</li>
-            <li>Underwater Basket Weaving: 1298</li>
-          </ul>
+          <div className="stats">
+            <h1 className="events">Best events</h1>
+            <ul>
+              <li>Yoga: 50</li>
+              <li>Basketball: 200</li>
+              <li>Underwater Basket Weaving: 1298</li>
+            </ul>
+          </div>
         </div>
 
       </div>
