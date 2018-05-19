@@ -15,7 +15,12 @@ class exerciseBreakout extends React.Component {
   render() {
     return (
       <div className="exerciseBreakout" >
-        <Nav />
+        <header className="header">
+          <h1 className="logo">WORK IT OUT!</h1>
+          <div className="navBar">
+            <Nav />
+          </div>
+        </header>
         <div className="exerciseName">
           <div className="exerciseIcon">
             <img src="" />

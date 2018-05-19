@@ -1,7 +1,7 @@
 import React from 'react';
 import * as routes from '../routes';
 import {Link} from 'react-router-dom';
-// import './input-area.scss';
+import './nav.scss';
 
 class Nav extends React.Component {
 
