@@ -1,0 +1,42 @@
+.top-holder {
+  margin-top: 20px;
+  padding-top: 30px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  border: 1px solid;
+  border-radius: 3px;
+  width: 90%;
+}
+
+.profile-img {
+  width: 200px;
+  height: 200px;
+}
+
+ul {
+  width: 100%;
+  text-align: left;
+  margin-left: 20px;
+}
+ .img {
+  margin-left: 30px;
+}
+
+.saying {
+  margin-bottom: 30px;
+  margin-left: 30px;
+}
+
+.events {
+  margin-left: 20px;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+li {
+  font-size: 22px;
+  margin-bottom: 5px;
+}

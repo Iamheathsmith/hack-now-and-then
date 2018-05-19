@@ -1,5 +1,21 @@
 .main-img {
-  width: 200px;
-  height: 200px;
+  display: inline;
+  width: 140px;
+  height: 140px;
   outline: 1px solid;
+  margin-right: 15px;
+}
+
+.div-img {
+  margin-left: 20px;
+  width: 17vw;
+  height: 180px;
+  display: inline-block;
+}
+
+.to-link {
+  margin-top: 5px;
+  display: block;
+  height: 20px;
+  font-size: 16px;
 }
