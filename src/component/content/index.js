@@ -4,12 +4,14 @@ import React from 'react';
 import Modal from '../modal/index';
 import * as routes from '../routes';
 import Images from '../images/index';
+import NavBar from '../nav/index';
 const ImgData = require('../../images/images');
 import {Link} from 'react-router-dom';
 import Profile from '../profile/index';
 import { renderIf } from '../lib/utils';
 import Pic from '../../images/latpulls.jpg';
 import ExerciseBO from '../exerciseBreakout/index';
+import Nav from '../nav/index';
 
 
 class Content extends React.Component {
@@ -21,8 +23,16 @@ class Content extends React.Component {
     this.handlelogIn = this.handlelogIn.bind(this);
   }
 
+  componentDidMount() {
+    let test = localStorage.getItem('login');
+    if (test === 'yes') {
+      this.setState({login: true});
+    }
+  }
+
   handlelogIn() {
     this.setState({login: true});
+    localStorage.setItem('login', 'yes');
   }
 
   render() {
@@ -30,14 +40,8 @@ class Content extends React.Component {
       <div className="main">
         <header>Tic Tac Toe?</header>
 
-        {/* <nav className="nav-bar">
-          <div className="links-to-site">
-            <Link className="signup" to={routes.SIGNUP}>Sign Up</Link>
-            <Link className="signin" to={routes.SIGNIN}>Sign In</Link>
-          </div>
-        </nav> */}
+        <Nav />
 
-        <Profile />
 
         {renderIf(this.state.login === false,
           <Modal

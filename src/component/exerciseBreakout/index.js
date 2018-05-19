@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from '../nav/index';
 // import './input-area.scss';
 
 class exerciseBreakout extends React.Component {
@@ -12,9 +13,9 @@ class exerciseBreakout extends React.Component {
   }
 
   render() {
-    console.log('this state', this.props.location.state);
     return (
       <div className="exerciseBreakout" >
+        <Nav />
         <div className="exerciseName">
           <div className="exerciseIcon">
             <img src="" />
