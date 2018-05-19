@@ -2,23 +2,37 @@
 import './content.scss';
 import React from 'react';
 import Modal from '../modal/index';
+import * as routes from '../routes';
 import Images from '../images/index';
-// import {Link} from 'react-router-dom';
+import NavBar from '../nav/index';
+const ImgData = require('../../images/images');
+import {Link} from 'react-router-dom';
 import Profile from '../profile/index';
 import { renderIf } from '../lib/utils';
-import DisplayBox from '../displayBox/index';
+import Pic from '../../images/latpulls.jpg';
+import ExerciseBO from '../exerciseBreakout/index';
+import Nav from '../nav/index';
+
 
 class Content extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      login: true,
+      login: false,
     };
     this.handlelogIn = this.handlelogIn.bind(this);
   }
 
+  componentDidMount() {
+    let test = localStorage.getItem('login');
+    if (test === 'yes') {
+      this.setState({login: true});
+    }
+  }
+
   handlelogIn() {
     this.setState({login: true});
+    localStorage.setItem('login', 'yes');
   }
 
   render() {
@@ -26,15 +40,8 @@ class Content extends React.Component {
       <div className="main">
         <header>Tic Tac Toe?</header>
 
-        {/* <nav className="nav-bar">
-          <div className="links-to-site">
-            <Link className="signup" to={routes.SIGNUP}>Sign Up</Link>
-            <Link className="signin" to={routes.SIGNIN}>Sign In</Link>
-          </div>
-        </nav> */}
+        <Nav />
 
-        <Profile />
-        <Images />
 
         {renderIf(this.state.login === false,
           <Modal
@@ -42,19 +49,16 @@ class Content extends React.Component {
           />
         )}
 
-        {/* <div className="boxes">
-          {this.state.array.map((item, arr) => {
-            return item.map((item, idx) => {
-              return <DisplayBox key={idx}
-                boxLocation={{arr,idx}}
-                value={this.state.array[arr][idx]}
-                onPicking={this.handleSubmit}
-                boardSize={this.state.size}
+        <div className="images">
+          {renderIf(this.state.login === true,
+            ImgData.default.images.map((item, idx) => {
+              console.log('test');
+              return <Images key={idx}
+                data={item}
               />;
-            });
-          })
-          }
-        </div> */}
+            })
+          )}
+        </div>
 
       </div>
     );

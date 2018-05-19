@@ -1,4 +1,5 @@
 import React from 'react';
+import Nav from '../nav/index';
 // import './input-area.scss';
 
 class Profile extends React.Component {
@@ -6,8 +7,9 @@ class Profile extends React.Component {
   render() {
     return (
       <div className="profile">
+
         <nav className="nav">
-          {/* stuff to go here */}
+          <Nav />
         </nav>
 
         <div className="top-holder">
