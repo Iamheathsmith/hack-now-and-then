@@ -20,6 +20,8 @@
 }
 
 .image-holder {
+  box-shadow: 6px 9px 28px -6px rgba(0,0,0,0.63);
+  background-color: rgb(203, 238, 251);
   padding-top: 30px;
   margin-bottom: 20px;
   margin: 0 auto;
@@ -39,10 +41,13 @@
 }
 
 .main-img {
+  box-shadow: 6px 9px 28px -6px rgba(0,0,0,0.63);
   height: 140px;
 }
 
 .lower-holder {
+  box-shadow: 6px 9px 28px -6px rgba(0,0,0,0.63);
+  background-color: white;
   margin-top: 20px;
   padding-top: 30px;
   margin: 0 auto;
@@ -56,6 +61,7 @@
 }
 
 .lower-right {
+  box-shadow: 6px 9px 28px -6px rgba(0,0,0,0.63);
   height: 95%;
   width: 30%;
   border: 1px solid;
@@ -63,6 +69,7 @@
 }
 
 .lower-left {
+  box-shadow: 6px 9px 28px -6px rgba(0,0,0,0.63);
   height: 95%;
   width: 40%;
   margin-right: 20%;
@@ -71,6 +78,7 @@
 }
 
 h1 {
+  font-family: 'Luckiest Guy', cursive;
   text-align: center;
   font-size: 24px;
   margin: 5px;
@@ -96,6 +104,7 @@ ul {
 }
 
 .leaderboard {
+  font-family: 'Luckiest Guy', cursive;
   font-size: 3vw;
   margin: 15px;
 }

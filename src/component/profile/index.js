@@ -23,7 +23,7 @@ class Profile extends React.Component {
             </ul>
           </div>
           <div className="saying">
-            <h1>"Mr. Poopy Butthole is the greatest person ever!"</h1>
+            <h1 className="funny">"Mr. Poopy Butthole is the greatest person ever!"</h1>
           </div>
 
           <div className="stats">

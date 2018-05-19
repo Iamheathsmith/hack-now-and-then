@@ -19,6 +19,7 @@ div .exerciseName {
 }
 
 .exerciseIcon img {
+    box-shadow: 6px 9px 28px -6px rgba(0,0,0,0.63);
     width: 315px;
     height: 315px;
 }
@@ -40,6 +41,7 @@ div .steps {
 }
 
 .leaderboard h1 {
+    margin-left: 45px;
     background-color: #D0FDC3;
     padding: 1rem;
     font-size: 20pt;
@@ -59,6 +61,7 @@ div .steps {
 }
 
 .exercise h1 {
+    text-align: left;
     font-size: 24pt;
 }
 
