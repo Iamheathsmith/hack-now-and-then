@@ -8,13 +8,7 @@ class Profile extends React.Component {
   render() {
     return (
       <div className="profile">
-
-        <header className="header">
-          <h1 className="logo">WORK IT OUT!</h1>
-          <div className="navBar">
-            <Nav />
-          </div>
-        </header>
+        <Nav />
 
         <div className="top-holder">
           <div className="img">

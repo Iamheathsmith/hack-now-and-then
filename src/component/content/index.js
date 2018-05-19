@@ -38,13 +38,7 @@ class Content extends React.Component {
   render() {
     return (
       <div className="main">
-
-        <header className="header">
-          <h1 className="logo">WORK IT OUT!</h1>
-          <div className="navBar">
-            <Nav />
-          </div>
-        </header>
+        <Nav />
 
 
         {renderIf(this.state.login === false,
