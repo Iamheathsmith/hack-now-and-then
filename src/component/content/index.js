@@ -2,11 +2,15 @@
 import './content.scss';
 import React from 'react';
 import Modal from '../modal/index';
+import * as routes from '../routes';
 import Images from '../images/index';
-// import {Link} from 'react-router-dom';
+import { ImgData } from '../../images/images';
+import {Link} from 'react-router-dom';
 import Profile from '../profile/index';
 import { renderIf } from '../lib/utils';
-import DisplayBox from '../displayBox/index';
+import Pic from '../../images/latpulls.jpg';
+import ExerciseBO from '../exerciseBreakout/index';
+
 
 class Content extends React.Component {
   constructor(props) {
@@ -34,7 +38,10 @@ class Content extends React.Component {
         </nav> */}
 
         <Profile />
-        <Images />
+        <Images
+          data={Pic}
+        />
+        {/* <ExerciseBO /> */}
 
         {renderIf(this.state.login === false,
           <Modal
@@ -42,19 +49,16 @@ class Content extends React.Component {
           />
         )}
 
-        {/* <div className="boxes">
-          {this.state.array.map((item, arr) => {
-            return item.map((item, idx) => {
-              return <DisplayBox key={idx}
-                boxLocation={{arr,idx}}
-                value={this.state.array[arr][idx]}
-                onPicking={this.handleSubmit}
-                boardSize={this.state.size}
+        <div className="images">
+          {console.log('this is a test', ImgData)}
+          {renderIf(this.state.login === true,
+            ImgData.map((item, arr) => {
+              <Images
+                data={item}
               />;
-            });
-          })
-          }
-        </div> */}
+            })
+          )}
+        </div>
 
       </div>
     );

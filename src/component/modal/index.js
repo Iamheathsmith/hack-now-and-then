@@ -7,8 +7,8 @@ class Modal extends React.Component {
     return (
       <div className="invis">
         <section className="modal">
-          <input type="text" className="name" placeHolder="User Name" />
-          <input type="text" className="password" placeHolder="Password" />
+          <input type="text" className="name" placeholder="User Name" />
+          <input type="text" className="password" placeholder="Password" />
           <div className="btns">
             <button className="btn" onClick={this.props.reset}>Sign in</button>
             <button className="btn" onClick={this.props.reset}>Sign Up</button>
