@@ -1,4 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
 .top-holder {
+  box-shadow: 6px 9px 28px -6px rgba(0,0,0,0.63);
+  background-color: rgb(203, 238, 251);
   margin-top: 20px;
   padding-top: 30px;
   margin: 0 auto;
@@ -11,8 +15,17 @@
 }
 
 .profile-img {
+  box-shadow: 6px 9px 28px -6px rgba(0,0,0,0.63);
   width: 200px;
   height: 200px;
+}
+
+.funny {
+  font-family: 'Luckiest Guy', cursive;
+}
+
+.stats {
+  display: flex;
 }
 
 ul {
@@ -25,8 +38,7 @@ ul {
 }
 
 .saying {
-  margin-bottom: 30px;
-  margin-left: 30px;
+  margin: 30px;
 }
 
 .events {
@@ -37,6 +49,7 @@ ul {
 }
 
 li {
+  font-family: 'Luckiest Guy', cursive;
   font-size: 22px;
   margin-bottom: 5px;
 }

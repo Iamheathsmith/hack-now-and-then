@@ -1,8 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy');
+
 .main-img {
+  box-shadow: 6px 9px 28px -6px rgba(0,0,0,0.63);
   display: inline;
-  width: 140px;
-  height: 140px;
-  outline: 1px solid;
+  width: 200px;
+  height: 200px;
+  border-radius: 3px;
+  border: 1px solid #e10f0f;
   margin-right: 15px;
 }
 
@@ -13,7 +17,13 @@
   display: inline-block;
 }
 
+a {
+  text-decoration: none;
+}
+
 .to-link {
+  text-decoration: none;
+  font-family: 'Luckiest Guy', cursive;
   margin-top: 5px;
   display: block;
   height: 20px;
